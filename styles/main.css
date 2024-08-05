@@ -1,23 +1,36 @@
+@font-face {
+  font-family: 'bada';
+  src: url(/fonts/bada.TTF) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: rgb(235, 197, 28);
+  background-color: black;
+}
+
 #container {
-  border: solid black;
   width: 100%;
   height: 100vh;
 }
 
 .header-container {
-  border: solid rgb(236, 75, 75);
   width: 100%;
   text-align: center;
+  font-family: 'bada', 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  letter-spacing: 15px;
 }
 
 .prompt {
-  border: dotted black;
   width: 100%;
   text-align: center;
+  font-family: 'bada', 'Times New Roman', Times, serif;
+  font-size: 1.8rem;
 }
 
 .content-container {
-  border: solid blue;
   width: 100%;
   height: 100%;
   display: flex;
@@ -26,25 +39,48 @@
 }
 
 .mood-card {
-  border: solid black;
   width: 550px;
-  height: 300px;
+  height: 550px;
   margin-top: 25px;
   margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(212, 207, 207, 0.959);
+  border-radius: 15px;
+}
+
+.mood-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 8px rgba(212, 207, 207, 0.959);
+}
+
+.mood-name {
+  text-align: center;
+  font-family: 'bada', 'Times New Roman', Times, serif;
+  font-size: 2rem;
 }
 
 .advice {
   display: flex;
-  border: solid black;
   justify-content: space-around;
+  gap: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .pic {
-  width: 250px;
+  width: 300px;
+  border-radius: 12px;
 }
 
 .quotes {
-    display: flex;
-    flex-direction: column;
-    border: solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+.quotes p {
+  font-size: 1rem;
 }
