@@ -1,0 +1,50 @@
+#container {
+  border: solid black;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-container {
+  border: solid rgb(236, 75, 75);
+  width: 100%;
+  text-align: center;
+}
+
+.prompt {
+  border: dotted black;
+  width: 100%;
+  text-align: center;
+}
+
+.content-container {
+  border: solid blue;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mood-card {
+  border: solid black;
+  width: 550px;
+  height: 300px;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.advice {
+  display: flex;
+  border: solid black;
+  justify-content: space-around;
+}
+
+.pic {
+  width: 250px;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+}

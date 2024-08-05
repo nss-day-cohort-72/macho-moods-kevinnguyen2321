@@ -1,2 +1,6 @@
+import { moodsHtml } from './moods.js';
+const container = document.getElementById('container');
 
-const container = document.querySelector('.container')
+const html = moodsHtml();
+
+container.innerHTML = html;
